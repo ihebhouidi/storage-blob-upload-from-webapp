@@ -54,11 +54,11 @@ jobs:
 
 
 
-      - name: Build and Publish
-      
+      - name: Build and Publish project
+         
         run: |
-           msbuild /nologo /verbosity:m /t:Build;Publish /p:Configuration=Release;OutputPath=D:\a\storage-blob-upload-from-webapp\published\ "D:\a\storage-blob-upload-from-webapp\storage-blob-upload-from-webapp\ImageResizeWebApp\ImageResizeWebApp\ImageResizeWebApp.csproj"
-
+          msbuild /nologo /verbosity:m /t:Build /p:Configuration=Release "D:\a\storage-blob-upload-from-webapp\storage-blob-upload-from-webapp\ImageResizeWebApp\ImageResizeWebApp\ImageResizeWebApp.csproj"
+          msbuild /nologo /verbosity:m /t:Publish /p:Configuration=Release;OutputPath=D:\a\storage-blob-upload-from-webapp\published\ "D:\a\storage-blob-upload-from-webapp\storage-blob-upload-from-webapp\ImageResizeWebApp\ImageResizeWebApp\ImageResizeWebApp.csproj"
 
 
 
