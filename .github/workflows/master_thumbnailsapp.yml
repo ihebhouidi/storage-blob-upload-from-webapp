@@ -56,7 +56,8 @@ jobs:
 
       - name: Build project
       
-        run: msbuild /nologo /verbosity:m /t:Build /t /p:_PackageTempDir="\published\" "D:\a\storage-blob-upload-from-webapp\storage-blob-upload-from-webapp\ImageResizeWebApp\ImageResizeWebApp\ImageResizeWebApp.csproj"
+        run: msbuild /nologo /verbosity:m /t:Build /p:_PackageTempDir="\published\" "D:\a\storage-blob-upload-from-webapp\storage-blob-upload-from-webapp\ImageResizeWebApp\ImageResizeWebApp\ImageResizeWebApp.csproj"
+
 
 
 
