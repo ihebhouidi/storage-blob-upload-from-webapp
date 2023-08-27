@@ -48,7 +48,11 @@ jobs:
 
       - name: Restore NuGet packages
 
-        run: nuget restore storage-blob-upload-from-webapp/ImageResizeWebApp/ImageResizeWebApp.sln
+        run: cd storage-blob-upload-from-webapp/ImageResizeWebApp/
+             nuget restore ImageResizeWebApp.sln
+        shell: pwsh
+        env:
+         NUGET: C:\hostedtoolcache\windows\nuget.exe\6.7.0\x64/nuget.exe
 
 
 
