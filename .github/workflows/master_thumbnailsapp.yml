@@ -58,7 +58,8 @@ jobs:
       - name: Change directory to project folder
       
         run: |
-            cd storage-blob-upload-from-webapp/ImageResizeWebApp/
+          cd D:\a\storage-blob-upload-from-webapp\storage-blob-upload-from-webapp\ImageResizeWebApp\ImageResizeWebApp\
+
 
       - name: Build and Publish
       
