@@ -113,4 +113,4 @@ jobs:
 
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_13c227fd69cb4616bdc876b019e085dd }}
 
-          package: .
+          package: D:\a\storage-blob-upload-from-webapp\storage-blob-upload-from-webapp
