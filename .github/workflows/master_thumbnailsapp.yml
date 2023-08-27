@@ -69,7 +69,7 @@ jobs:
 
           name: ASP-app
 
-          path: '/published/**'
+          path: D:/a/storage-blob-upload-from-webapp/storage-blob-upload-from-webapp/ImageResizeWebApp/ImageResizeWebApp/bin/Debug/netcoreapp2.0/ImageResizeWebApp.dll
 
 
 
