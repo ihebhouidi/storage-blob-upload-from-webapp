@@ -54,18 +54,10 @@ jobs:
 
 
 
-
-      - name: Change directory to project folder
-      
-        run: |
-          cd D:\a\storage-blob-upload-from-webapp\storage-blob-upload-from-webapp\ImageResizeWebApp\ImageResizeWebApp\
-
-
       - name: Build and Publish
       
         run: |
-          msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
-          shell: pwsh
+          msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\" "D:\a\storage-blob-upload-from-webapp\storage-blob-upload-from-webapp\ImageResizeWebApp\ImageResizeWebApp\ImageResizeWebApp.csproj"
 
 
 
